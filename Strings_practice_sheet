@@ -1,0 +1,63 @@
+// practice sheet q1 : Java program to convert a string to lower case
+import java.util.Scanner;
+public class strings_prac_sheet_1 {
+    public static void main(String[] args) {
+        System.out.println("enter a string");
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        System.out.print("original String: ");
+        System.out.println(S);
+        String name = S.toLowerCase();
+        System.out.print("in lower case: ");
+        System.out.println(name);
+    }
+}
+
+//Java program to replace spaces with underscores
+public class strings_prac_sheet_2 {
+    public static void main(String[] args) {
+        String S = "S O M A  S E K H A R";
+        System.out.print("original String: ");
+        System.out.println(S);
+        System.out.print("converted String: ");
+        System.out.println(S.replace(" ","_"));
+    }
+}
+
+
+// Java program to fill in a letter template which looks like :
+// letter = " Dear <|name|>, Thanks a lot"
+// replace <|name|> with a String (Some name)
+import java.util.Scanner;
+public class strings_prac_sheet_3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        String letter = " Dear <|name|>, Thanks a lot";
+        String new_letter = letter.replace("<|name|>",name);
+        System.out.println(new_letter);
+    }
+}
+
+
+//Java program to detect double and triple spaces in a String
+import java.util.Scanner;
+public class strings_prac_sheet_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        System.out.print("double spaces: ");
+        System.out.println(S.indexOf("  "));
+        System.out.print("triple spaces: ");
+        System.out.println(S.indexOf("   "));
+    }
+}
+
+// Program to format the following letter using escape sequesnces
+// letter = "Dear Harry,This Java Course is nice.Thanks";
+public class strings_prac_sheet_5 {
+    public static void main(String[] args) {
+        String letter = "Dear Harry,\n\tThis Java Course is nice.\n\tThanks";
+        System.out.println(letter);
+    }
+}
