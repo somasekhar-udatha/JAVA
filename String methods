@@ -1,0 +1,37 @@
+public class String_methods {
+    public static void main(String[] args) {
+        // defining a String
+        String S1 = "SOMA";
+        String S2 = new String("soma");
+        System.out.println(S1);
+        System.out.println(S2);
+        // String methods --> after method the existing string doesn't change
+        String name = "soma";
+        int l = name.length();
+        System.out.printf("length = %d \n",l);
+        System.out.println(name.toUpperCase());
+        System.out.println(S1.toLowerCase());
+        // or
+        String ls = name.toUpperCase();
+        String us = S1.toLowerCase();
+        System.out.println(ls);
+        System.out.println(us);
+        String name2 = "soma sekhar    ";
+        String tname2 = name2.trim();
+        System.out.println(tname2);
+        System.out.println(name.substring(2));
+        System.out.println(name.substring(2,3));
+        System.out.println(name.replace("s","d"));
+        System.out.println(name.replace("ma","ti"));
+        System.out.println(name.replace("m","dr"));
+        System.out.println(name.startsWith("so"));
+        System.out.println(name.endsWith("ma"));
+        System.out.println(name.charAt(2));
+        System.out.println(name.indexOf("ma"));
+        System.out.println(name.lastIndexOf("a"));
+        System.out.println(name.equals("soma"));
+        System.out.println(name.equals("Soma"));
+        System.out.println("IAM escape sequemce \"double quotes ");
+        System.out.println("escape sequesnce \\");
+    }
+}
