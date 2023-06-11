@@ -1,0 +1,35 @@
+public class if_else {
+    public static void main(String[] args) {
+        /* int age = 15;
+        if (age > 18) {
+            System.out.println("can drive");
+        }
+        else {
+            System.out.println("cant drive");
+        }*/
+        // another method using bool
+        /*int age = 21;
+        boolean cond = (age >= 18);
+        if (cond) {
+            System.out.println("can drive");
+        }
+        else {
+            System.out.println("cant drive");
+        }
+        */
+        // else - if clause
+        int sage = 2;
+        if (sage > 18) {
+            System.out.println("drive");
+        }
+        else if (sage == 18) {
+            System.out.println("take license");
+        }
+        else {
+            System.out.println("not eligible");
+        }
+    }
+}
+
+
+
