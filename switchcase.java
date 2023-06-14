@@ -19,3 +19,14 @@ public class switch_case {
         }
     }
 }
+
+/*
+        String S = "soma";
+        switch(S) {
+            case "soma" :
+                System.out.println("Soma");
+                break;
+            case "Sekhar" :
+                System.out.println("Sekhar");
+                break;
+        } */
